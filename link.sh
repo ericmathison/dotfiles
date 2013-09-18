@@ -23,7 +23,7 @@ do
       then
           unlink ~/.$file
       fi
-      rm -rf ~/.file 2>&1 >/dev/null
+      rm -rf ~/.$file 2>&1 >/dev/null
       ln -sf $DIR/$file ~/.$file
   fi
 done
