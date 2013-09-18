@@ -82,13 +82,3 @@ set t_Co=256
 
 colorscheme jellybeans
 " colorscheme molokai
-
-"""""""""""""""""""""" Solarized Related Settings """"""""""""""""""""""""""""""
-"solorized settings https://github.com/altercation/solarized
-" syntax enable
-" set background=dark
-" colorscheme solarized
-"
-"solarized colors for gnome-terminal:
-"https://github.com/sigurdga/gnome-terminal-colors-solarized
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
