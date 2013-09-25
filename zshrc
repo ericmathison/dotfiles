@@ -91,4 +91,4 @@ foreground-vi() {
 zle -N foreground-vi
 bindkey '^Z' foreground-vi
 
-source ~/.redis-credentials
+[ -f ~/.redis-credentials ] && source ~/.redis-credentials
