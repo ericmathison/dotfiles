@@ -19,7 +19,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Eric's Custom Bash Prompt:
-color="\[\e[1;93m\]"
+color="\[\e[1;32m\]"  # currently green
 red="\[\e[1;31m\]"
 
 # end color
