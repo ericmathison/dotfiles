@@ -19,7 +19,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Eric's Custom Bash Prompt:
-yellow="\[\e[1;93m\]"
+color="\[\e[1;93m\]"
 red="\[\e[1;31m\]"
 
 # end color
@@ -29,7 +29,7 @@ close="\[\e[m\]"
 # \h is the name of my computer
 # \w is the current directory
 # __git_ps1 retrieves the git branch name if in a git repository
-PS1="$yellow\u@\h: \w $red"'$(__git_ps1 "(%s)")'"$yellow[\j]$ $close"
+PS1="$color\u@\h: \w $red"'$(__git_ps1 "(%s)")'"$color[\j]$ $close"
 
 # Do some quoting magic so that the formatting string will have surrounding
 # quotes both when run directly and after doing shell expansion interactively
