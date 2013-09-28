@@ -54,6 +54,8 @@ alias gb='git branch -av'
 alias gst='git status'
 alias gco='git checkout'
 alias gpom='git push origin master'
+
+# cd to git root
 alias gr='cd "$(git rev-parse --show-toplevel)"'
 
 # Show all uncommited changes whether files are tracked or not. The downside to
