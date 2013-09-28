@@ -68,7 +68,7 @@ GPG_TTY=`tty`
 export GPG_TTY
 
 # z - Jump around - https://github.com/rupa/z
-source ~/Documents/software/z/z.sh
+source ~/Documents/software/packages/z/z.sh
 
 source /usr/local/share/chruby/chruby.sh
 chruby 2.0.0-p247
