@@ -55,6 +55,12 @@ alias gst='git status'
 alias gco='git checkout'
 alias gpom='git push origin master'
 alias gr='cd "$(git rev-parse --show-toplevel)"'
+
+# Show all uncommited changes whether files are tracked or not. The downside to
+# this implementation is that any changes which are currently staged will no
+# longer be staged after running this.
+alias gadiff='git add "$(git rev-parse --show-toplevel)" && git diff --cached && git reset HEAD'
+
 # alias 'mit-scheme'='rlwrap mit-scheme'
 # alias 'node'='rlwrap node'
 alias r='pushd +1'
