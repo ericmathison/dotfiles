@@ -8,10 +8,6 @@ set showbreak=↪
 set display=lastline
 set colorcolumn=80
 
-"in addition to yanking text to the ordinary "unnamed" buffer, also place yanked
-"text in the system clipboard
-set clipboard=unnamedplus
-
 "exit vim quickly
 map <leader>q ZQ
 map <leader>w ZZ
