@@ -1,0 +1,37 @@
+[user]
+    name = Eric Mathison
+    email = dev@ekmathison.com
+[core]
+    editor = vim
+    excludesfile = /home/eric/.gitignore_global
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    show = auto
+    grep = auto
+[pager]
+    status = true
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+
+
+############ John Ryan's Git Grep Configuration ##############
+# source: https://raw.github.com/jtigger/rucksack/master/git/.gitconfig-grep
+# .gitconfig-grep
+
+# (ref: https://www.kernel.org/pub/software/scm/git/docs/git-config.html
+# search for "color.grep.<slot>" )
+[color "grep"]
+    context = green
+    filename = white
+    function = normal ul
+    linenumber = cyan
+    match = bold black green
+    selected = bold green
+    separator = bold blue
+[grep]
+    linenumber = true
+[alias]
+    gp = grep -I --heading --before-context 2 --after-context 2 --show-function --untracked --extended-regexp
