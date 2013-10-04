@@ -62,6 +62,7 @@ if has("autocmd")
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType css setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType vim setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
   " autocmd FileType html setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab showbreak=↪.........................................
   autocmd FileType eruby setlocal ts=2 sts=2 sw=2 expandtab
