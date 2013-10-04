@@ -1,0 +1,6 @@
+:set showtabline=never
+:set hintkeys=asdfg;lkjh
+:set defsearch=duckduckgo
+:highlight -a Hint text-transform: uppercase;
+:colorscheme solarized-dark
+:map <leader>q d
