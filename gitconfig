@@ -26,7 +26,7 @@
 [color "grep"]
     context = green
     filename = white
-    function = normal ul
+    function = blue
     linenumber = cyan
     match = bold black green
     selected = bold green
