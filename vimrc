@@ -71,8 +71,6 @@ if has("autocmd")
   autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType php setlocal showbreak=↪.....................................
   autocmd FileType text setlocal modeline
-  autocmd BufNewFile,BufRead *.snip setf html
-  autocmd BufNewFile,BufRead *.glob setf html
 endif
 
 " use vim-slime with tmux
