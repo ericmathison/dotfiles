@@ -62,12 +62,14 @@ if has("autocmd")
   autocmd FileType vim setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
   " autocmd FileType html setlocal ts=4 sts=4 sw=4 noexpandtab
-  autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab showbreak=↪.........................................
+  autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType html setlocal showbreak=↪....................................
   autocmd FileType eruby setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType c setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType java setlocal ts=4 sts=4 sw=4 expandtab
   " autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
-  autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab showbreak=↪.........................................
+  autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType php setlocal showbreak=↪.....................................
   autocmd FileType text setlocal modeline
   autocmd BufNewFile,BufRead *.snip setf html
   autocmd BufNewFile,BufRead *.glob setf html
