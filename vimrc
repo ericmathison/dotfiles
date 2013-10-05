@@ -31,7 +31,7 @@ call NumberToggle()
 "toggle relative line numbers
 nnoremap <leader>n :call NumberToggle()<cr>
 
-"hide line numbers and showbreak
+"hide line numbers and showbreak to more easily copy text directly from terminal
 nmap <leader>b :set norelativenumber nonumber showbreak=<cr>
 
 "toggle display of invisible characters
