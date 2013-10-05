@@ -71,6 +71,7 @@ if has("autocmd")
   autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType php setlocal showbreak=↪.....................................
   autocmd FileType text setlocal modeline
+  autocmd FileType gitcommit setlocal spell
 endif
 
 " use vim-slime with tmux
