@@ -20,4 +20,3 @@ do
       ln -s $DIR/$file ~/.$file
   fi
 done
-
