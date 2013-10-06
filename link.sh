@@ -3,8 +3,8 @@
 # Copied from:
 # http://jmatthews.us/blog/2012/10/27/dots-pt1/
 
-IGNORE="link\.sh"
 # Ignore certain files using egrep's extended regular expressions
+IGNORE="(link.sh|test/.*)"
 
 # Get current directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
