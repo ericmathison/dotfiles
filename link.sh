@@ -15,16 +15,9 @@ do
   if [ "$(readlink ~/.$file)" != "$DIR/$file" ]
   then
       echo $file
-      if test ! -d `dirname ~/.$file`
-      then
-          mkdir -p `dirname ~/.$file`
-      fi
-      if test -h ~/.$file
-      then
-          unlink ~/.$file
-      fi
-      rm -rf ~/.$file 2>&1 >/dev/null
-      ln -sf $DIR/$file ~/.$file
+      [ ! -d `dirname ~/.$file` ] && mkdir -p `dirname ~/.$file`
+      rm -rf ~/.$file
+      ln -s $DIR/$file ~/.$file
   fi
 done
 
