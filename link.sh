@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Copied from:
+# Based on a script by Josh Matthews
 # http://jmatthews.us/blog/2012/10/27/dots-pt1/
 
 # Ignore certain files using egrep's extended regular expressions
