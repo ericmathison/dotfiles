@@ -1,6 +1,10 @@
-:set showtabline=never
 :set hintkeys=asdfg;lkjh
 :set defsearch=duckduckgo
+
+"manage pages with window manager tabs not FF tabs
+:set popups=window
+:set showtabline=never
+
 :highlight -a Hint text-transform: uppercase;
 ":colorscheme solarized-dark
 :map <leader>q d
