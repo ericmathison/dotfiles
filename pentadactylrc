@@ -1,10 +1,10 @@
-:set hintkeys=asdfg;lkjh
-:set defsearch=duckduckgo
+set hintkeys=asdfg;lkjh
+set defsearch=duckduckgo
 
 "manage pages with window manager tabs not FF tabs
-:set popups=window
-:set showtabline=never
+set popups=window
+set showtabline=never
 
-:highlight -a Hint text-transform: uppercase;
-":colorscheme solarized-dark
-:map <leader>q d
+highlight -a Hint text-transform: uppercase;
+"colorscheme solarized-dark
+map <leader>q d
