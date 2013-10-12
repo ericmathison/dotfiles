@@ -48,6 +48,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/home/eric/node_modules/cssbeautify/bin:/home/eric/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
+# Thanks but no thanks. I know when I can't handle `rm`.
+# For most occasions I use https://rubygems.org/gems/trash
+setopt rmstarsilent
+
 alias gl="git log --pretty=format:'%h - %an, %ar : %s' --graph"
 alias gltrunc="git log --pretty=format:'%h - %an, %ar : %s' --graph --color=always | sed 's/^\(.\{160\}\).\+/\1/' |less -R"
 alias gb='git branch -av'
