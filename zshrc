@@ -74,8 +74,10 @@ alias gadiff='git add "$(git rev-parse --show-toplevel)" && git diff --cached &&
 # alias 'mit-scheme'='rlwrap mit-scheme'
 # alias 'node'='rlwrap node'
 alias r='pushd +1'
-alias l='ls -CF'
-alias la='ls -CFA'
+alias l='ls -lF --color=auto'
+alias la='ls -lFA --color=auto'
+alias ls='ls -F --color=auto'
+alias lsa='ls -FA --color=auto'
 alias be='bundle exec'
 
 # for gpg vim plugin
