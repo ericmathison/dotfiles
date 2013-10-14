@@ -76,7 +76,6 @@ alias gadiff='git add "$(git rev-parse --show-toplevel)" && git diff --cached &&
 alias r='pushd +1'
 alias l='ls -CF'
 alias la='ls -CFA'
-alias hackernews='(midori https://news.ycombinator.com &)'
 alias be='bundle exec'
 
 # for gpg vim plugin
