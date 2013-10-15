@@ -60,6 +60,7 @@ if has("autocmd")
   autocmd FileType html,php setlocal showbreak=↪................................
   autocmd FileType text setlocal modeline
   autocmd FileType gitcommit setlocal spell
+  autocmd BufRead,BufNewFile *.cap set filetype=ruby
 endif
 
 " use vim-slime with tmux
