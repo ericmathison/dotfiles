@@ -52,7 +52,7 @@ export PATH=$PATH:/home/eric/node_modules/cssbeautify/bin:/home/eric/bin:/usr/lo
 # For most occasions I use https://rubygems.org/gems/trash
 setopt rmstarsilent
 
-alias gl="git log --pretty=format:'%h - %an, %ar : %s' --graph"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 alias gltrunc="git log --pretty=format:'%h - %an, %ar : %s' --graph --color=always | sed 's/^\(.\{160\}\).\+/\1/' |less -R"
 alias gb='git branch -av'
 alias gst='git status'
