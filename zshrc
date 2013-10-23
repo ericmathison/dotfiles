@@ -46,7 +46,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/home/eric/node_modules/cssbeautify/bin:/home/eric/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=$PATH:/home/eric/node_modules/cssbeautify/bin:/home/valerie/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Thanks but no thanks. I know when I can't handle `rm`.
 # For most occasions I use https://rubygems.org/gems/trash
@@ -85,7 +85,7 @@ GPG_TTY=`tty`
 export GPG_TTY
 
 # z - Jump around - https://github.com/rupa/z
-source ~/Documents/software/packages/z/z.sh
+source ~/dotfiles/z.sh
 
 source /usr/local/share/chruby/chruby.sh
 chruby 2.0.0-p247
@@ -107,5 +107,3 @@ foreground-vi() {
 }
 zle -N foreground-vi
 bindkey '^Z' foreground-vi
-
-[ -f ~/.redis-credentials ] && source ~/.redis-credentials

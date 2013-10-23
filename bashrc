@@ -29,7 +29,8 @@ close="\[\e[m\]"
 # \h is the name of my computer
 # \w is the current directory
 # __git_ps1 retrieves the git branch name if in a git repository
-PS1="$color\u@\h: \w $red"'$(__git_ps1 "(%s)")'"$color$ $close"
+#PS1="$color\u@\h: \w $red"'$(__git_ps1 "(%s)")'"$color$ $close"
+PS1="$color\u@\h: \w $close"
 
 # Do some quoting magic so that the formatting string will have surrounding
 # quotes both when run directly and after doing shell expansion interactively
@@ -56,7 +57,4 @@ export HISTSIZE=100000 HISTFILE=~/.bhistory
 export EDITOR=vim
 
 # z - Jump around - https://github.com/rupa/z
-source ~/bin/z.sh
-
-source /usr/local/share/chruby/chruby.sh
-chruby 2.0.0-p247
+[ -f ~/bin/z.sh ] && source ~/bin/z.sh

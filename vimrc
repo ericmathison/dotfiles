@@ -1,4 +1,4 @@
-call pathogen#infect()
+" call pathogen#infect()
 
 set ignorecase
 set incsearch
@@ -68,5 +68,5 @@ let g:slime_target = "tmux"
 
 set t_Co=256
 
-colorscheme jellybeans
+" colorscheme jellybeans
 " colorscheme molokai
