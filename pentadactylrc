@@ -7,3 +7,6 @@ set showtabline=never
 
 "colorscheme solarized-dark
 map <leader>q d
+
+"hide status bar
+set guioptions-=s
