@@ -1,0 +1,7 @@
+# Use UP and DOWN instead of the default MOVE_UP and MOVE_DOWN. This uses arrows
+# for scrolling instead of moving cursor.
+keymap  UP    DOWN
+keymap  DOWN  UP
+
+# Don't ask for confirmation (Just like Q). I don't like the shift key.
+keymap  q  EXIT
