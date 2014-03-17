@@ -1,22 +1,21 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# Based on a script by Josh Matthews
-# http://jmatthews.us/blog/2012/10/27/dots-pt1/
+# Once upon a time, my dotfiles repo had a script which would dynamically find
+# and symlink all the dotfiles. Overall, it was great except when I didn't want
+# ALL the dotfiles symlinked. Instead of spending a lot of time and most likely
+# just complicating things anyway, I'm punting on the issue by just hard coding
+# the file names. Unwanted lines can be commented out temporarily. To look at
+# my previous script, do a git checkout of b244c6d74905e6abea4f029e35878bbd4891f
 
-# Ignore certain files using egrep's extended regular expressions
-IGNORE="(link\.sh|test/.*|README\.md)"
-
-# Get current directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-echo -e "\e[1;35mSymlinking config files:\e[m"
-for file in $(git ls-files | egrep -v $IGNORE)
-do
-  if [ "$(readlink ~/.$file)" != "$DIR/$file" ]
-  then
-      echo $file
-      [ ! -d `dirname ~/.$file` ] && mkdir -p `dirname ~/.$file`
-      rm -rf ~/.$file
-      ln -s $DIR/$file ~/.$file
-  fi
-done
+cd
+ln -si ~/dotfiles/Xmodmap .Xmodmap
+mkdir -p .i3
+ln -si ~/dotfiles/i3/config .i3/config
+ln -si ~/dotfiles/bashrc .bashrc
+ln -si ~/dotfiles/vimrc .vimrc
+ln -si ~/dotfiles/gitconfig .gitconfig
+ln -si ~/dotfiles/pentadactylrc .pentadactylrc
+ln -si ~/dotfiles/zshrc .zshrc
+ln -si ~/dotfiles/gitignore_global .gitignore_global
+mkdir -p .w3m
+ln -si ~/dotfiles/w3m/keymap .w3m/keymap
