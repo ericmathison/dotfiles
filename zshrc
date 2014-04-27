@@ -99,7 +99,7 @@ export GPG_TTY
 source ~/Documents/software/packages/z/z.sh
 
 source /usr/local/share/chruby/chruby.sh
-chruby 2.0.0-p247
+chruby 2.1
 
 source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
 
