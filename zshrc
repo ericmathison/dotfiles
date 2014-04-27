@@ -86,6 +86,10 @@ alias la='ls -lhFA --color=auto'
 alias ls='ls -F --color=auto'
 alias lsa='ls -FA --color=auto'
 alias be='bundle exec'
+alias am=alsamixer
+alias zmu='z mu'
+alias zm='z mu' # aliases `zm u` to `z mu`
+alias zk='z k'
 
 # for gpg vim plugin
 GPG_TTY=`tty`
