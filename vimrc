@@ -32,7 +32,7 @@ call NumberToggle()
 nnoremap <leader>n :call NumberToggle()<cr>
 
 "hide line numbers and showbreak to more easily copy text directly from terminal
-nmap <leader>b :set norelativenumber nonumber showbreak=<cr>
+nmap <leader>h :set norelativenumber nonumber showbreak=<cr>
 
 "toggle display of invisible characters
 nmap <leader>l :set list!<cr>
