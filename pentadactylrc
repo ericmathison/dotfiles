@@ -5,7 +5,6 @@ set defsearch=duckduckgo
 set popups=window
 set showtabline=never
 
-"colorscheme solarized-dark
 map <leader>q d
 
 "get the mouse out of my way!
