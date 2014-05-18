@@ -48,10 +48,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/home/eric/node_modules/cssbeautify/bin:/home/eric/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-# Thanks but no thanks. I know when I can't handle `rm`.
-# For most occasions I use https://rubygems.org/gems/trash
-setopt rmstarsilent
-
 # show graph of all branches/stashes
 alias gla="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 
