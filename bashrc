@@ -25,9 +25,10 @@ alias gl="git log --pretty=format:\''%h - %an, %ar : %s'\' -20"
 alias gb='git branch -av'
 alias gst='git status'
 alias gco='git checkout'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias l='ls -lhF --color=auto'
+alias la='ls -lhFA --color=auto'
+alias ls='ls -F --color=auto'
+alias lsa='ls -FA --color=auto'
 
 export PATH=$PATH:/home/eric/bin
 
