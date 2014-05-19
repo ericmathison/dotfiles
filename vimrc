@@ -12,22 +12,8 @@ map <leader>w ZZ
 noremap j gj
 noremap k gk
 
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-
-"start with relative line numbering
-call NumberToggle()
-
-"toggle relative line numbers
-nnoremap <leader>n :call NumberToggle()<cr>
-
 "hide line numbers and showbreak to more easily copy text directly from terminal
-nmap <leader>h :set norelativenumber nonumber showbreak=<cr>
+nmap <leader>h :set nonumber showbreak=<cr>
 
 "toggle display of invisible characters
 nmap <leader>l :set list!<cr>
