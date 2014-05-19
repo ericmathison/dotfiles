@@ -102,3 +102,6 @@ zle -N foreground-vi
 bindkey '^Z' foreground-vi
 
 [ -f ~/.redis-credentials ] && source ~/.redis-credentials
+
+# Fuzzy Finder: https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

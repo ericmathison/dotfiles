@@ -44,3 +44,6 @@ source ~/bin/z.sh
 
 source /usr/local/share/chruby/chruby.sh
 chruby 2.0.0-p247
+
+# Fuzzy Finder: https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
