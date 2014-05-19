@@ -36,6 +36,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+# plugins=(git history-substring-search)
 plugins=(git)
 
 
@@ -45,7 +46,6 @@ plugins=(git)
 
 source_list=($ZSH/oh-my-zsh.sh
              /usr/local/share/chruby/chruby.sh
-             ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
              ~/.redis-credentials
              ~/.fzf.zsh)
 
