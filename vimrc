@@ -24,6 +24,10 @@ map <leader>s :%SlimeSend<cr>
 "save and refresh web browser
 map <leader>r :w<bar>:!xdotool search --name 'Pentadactyl' key F5<cr><cr>
 
+"Source a single line of vimscript
+"reference: http://vimbits.com/bits/23
+nnoremap <Leader>S ^vg_y:execute @@<CR>
+
 "scroll page using arrows
 nmap <Up> <C-y>
 nmap <Down> <C-e>
