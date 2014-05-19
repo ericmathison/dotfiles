@@ -1,9 +1,19 @@
-# append to the history file, don't overwrite it
-shopt -s histappend
+# ========== Files to Source ==========
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+source_list=(~/Documents/software/packages/z/z.sh
+             /usr/local/share/chruby/chruby.sh
+             ~/.redis-credentials
+             ~/.fzf.bash)
+
+for file in "${source_list[@]}"
+do
+    # make sure file exists before sourcing
+    [ -f "$file" ] && source "$file"
+done
+
+
+
+# ========== Variables ==========
 
 # Eric's Custom Bash Prompt:
 color="\[\e[1;32m\]"  # currently green
@@ -18,6 +28,20 @@ close="\[\e[m\]"
 # __git_ps1 retrieves the git branch name if in a git repository
 PS1="$color\u@\h: \w $red"'$(__git_ps1 "(%s)")'"$color$ $close"
 
+
+# for gpg vim plugin
+export GPG_TTY=`tty`
+
+# give me lots of history in a custom file in case I switch OSes and it gets
+# overwritten
+export HISTSIZE=100000 HISTFILE=~/.bhistory
+export EDITOR=vim
+export PATH=$PATH:/home/eric/bin
+
+
+
+# ========== Aliases ==========
+
 # Do some quoting magic so that the formatting string will have surrounding
 # quotes both when run directly and after doing shell expansion interactively
 # with C-M-e (to edit the branch name).
@@ -30,20 +54,11 @@ alias la='ls -lhFA --color=auto'
 alias ls='ls -F --color=auto'
 alias lsa='ls -FA --color=auto'
 
-export PATH=$PATH:/home/eric/bin
 
-# for gpg vim plugin
-export GPG_TTY=`tty`
 
-# give me lots of history in a custom file in case I switch OSes and it gets overwritten
-export HISTSIZE=100000 HISTFILE=~/.bhistory
-export EDITOR=vim
+# ========== Miscellaneous ==========
 
-# z - Jump around - https://github.com/rupa/z
-source ~/bin/z.sh
-
-source /usr/local/share/chruby/chruby.sh
 chruby 2.0.0-p247
 
-# Fuzzy Finder: https://github.com/junegunn/fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# append to the history file, don't overwrite it
+shopt -s histappend
