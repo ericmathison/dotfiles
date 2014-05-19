@@ -28,6 +28,8 @@ map <leader>r :w<bar>:!xdotool search --name 'Pentadactyl' key F5<cr><cr>
 "reference: http://vimbits.com/bits/23
 nnoremap <Leader>S ^vg_y:execute @@<CR>
 
+nnoremap <C-P> :FZF<cr>
+
 "scroll page using arrows
 nmap <Up> <C-y>
 nmap <Down> <C-e>
