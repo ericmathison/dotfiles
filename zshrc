@@ -5,12 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
 ZSH_THEME="ericmathison"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -74,9 +69,6 @@ alias gr='cd "$(git rev-parse --show-toplevel)"'
 # the safety of such a proposition.
 alias gadiff='git add "$(git rev-parse --show-toplevel)" && git diff --cached && git reset HEAD'
 
-# alias 'mit-scheme'='rlwrap mit-scheme'
-# alias 'node'='rlwrap node'
-alias r='pushd +1'
 alias l='ls -lhF --color=auto'
 alias la='ls -lhFA --color=auto'
 alias ls='ls -F --color=auto'
