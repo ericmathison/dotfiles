@@ -113,8 +113,8 @@ alias zk='z k'
 # ========== Key Bindings ==========
 
 # bind P and N for EMACS mode
-bindkey -M emacs '^P' history-substring-search-up
-bindkey -M emacs '^N' history-substring-search-down
+# bindkey -M emacs '^P' history-substring-search-up
+# bindkey -M emacs '^N' history-substring-search-down
 
 # make C-z toggle suspension of vim
 foreground-vi() {
