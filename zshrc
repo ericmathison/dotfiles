@@ -103,5 +103,6 @@ bindkey '^Z' foreground-vi
 
 [ -f ~/.redis-credentials ] && source ~/.redis-credentials
 
+export EDITOR=vim
 # Fuzzy Finder: https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
