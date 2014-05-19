@@ -36,8 +36,9 @@ vmap <Right> 5zl
 
 if has("autocmd")
   filetype plugin indent on
-  autocmd FileType ruby,cucumber,vim,eruby setlocal ts=2 sts=2 sw=2 et
-  autocmd FileType javascript,css,sh,c,java,html,php setlocal ts=4 sts=4 sw=4 et
+  autocmd FileType ruby,cucumber,vim,eruby,go setlocal ts=2 sts=2 sw=2 et
+  autocmd FileType javascript,css,sh,c setlocal ts=4 sts=4 sw=4 et
+  autocmd FileType python,html,php,java setlocal ts=4 sts=4 sw=4 et
   autocmd FileType html,php setlocal showbreak=↪................................
   autocmd FileType text setlocal modeline
   autocmd FileType gitcommit setlocal spell
