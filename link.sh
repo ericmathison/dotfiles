@@ -8,9 +8,12 @@
 # my previous script, do a git checkout of b244c6d74905e6abea4f029e35878bbd4891f
 
 cd
+
 ln -si ~/dotfiles/Xmodmap .Xmodmap
 mkdir -p .i3
 ln -si ~/dotfiles/i3/config .i3/config
+mkdir -p .oh-my-zsh/custom/themes
+ln -si ~/dotfiles/oh-my-zsh/custom/themes/ericmathison.zsh-theme .oh-my-zsh/custom/themes/ericmathison.zsh-theme
 ln -si ~/dotfiles/bashrc .bashrc
 ln -si ~/dotfiles/vimrc .vimrc
 ln -si ~/dotfiles/gitconfig .gitconfig
