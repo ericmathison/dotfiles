@@ -32,8 +32,7 @@ alias l='ls -CF'
 export PATH=$PATH:/home/eric/bin
 
 # for gpg vim plugin
-GPG_TTY=`tty`
-export GPG_TTY
+export GPG_TTY=`tty`
 
 # give me lots of history in a custom file in case I switch OSes and it gets overwritten
 export HISTSIZE=100000 HISTFILE=~/.bhistory

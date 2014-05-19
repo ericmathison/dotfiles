@@ -80,8 +80,7 @@ alias zm='z mu' # aliases `zm u` to `z mu`
 alias zk='z k'
 
 # for gpg vim plugin
-GPG_TTY=`tty`
-export GPG_TTY
+export GPG_TTY=`tty`
 
 # z - Jump around - https://github.com/rupa/z
 source ~/Documents/software/packages/z/z.sh
