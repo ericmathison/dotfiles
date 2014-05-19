@@ -18,9 +18,6 @@ nmap <leader>h :set nonumber showbreak=<cr>
 "toggle display of invisible characters
 nmap <leader>l :set list!<cr>
 
-"send entire file to repl using vim-slime
-map <leader>s :%SlimeSend<cr>
-
 "save and refresh web browser
 map <leader>r :w<bar>:!xdotool search --name 'Pentadactyl' key F5<cr><cr>
 
