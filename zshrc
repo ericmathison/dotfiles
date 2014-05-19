@@ -37,11 +37,41 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
- # history-substring-search
-source $ZSH/oh-my-zsh.sh
+
+
+
+
+# ========== Files to Source ==========
+
+source_list=($ZSH/oh-my-zsh.sh
+             ~/Documents/software/packages/z/z.sh
+             /usr/local/share/chruby/chruby.sh
+             ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
+             ~/.redis-credentials
+             ~/.fzf.zsh)
+
+for file in "${source_list[@]}"
+do
+    # make sure file exists before sourcing
+    [ -f "$file" ] && source "$file"
+done
+
+
+
+# ========== Variables ==========
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/go/bin:/home/eric/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# for gpg vim plugin
+export GPG_TTY=`tty`
+
+export EDITOR=vim
+export GOPATH='/home/eric/go'
+
+
+
+# ========== Aliases ==========
 
 # show graph of all branches/stashes
 alias gla="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
@@ -79,16 +109,9 @@ alias zmu='z mu'
 alias zm='z mu' # aliases `zm u` to `z mu`
 alias zk='z k'
 
-# for gpg vim plugin
-export GPG_TTY=`tty`
 
-# z - Jump around - https://github.com/rupa/z
-source ~/Documents/software/packages/z/z.sh
 
-source /usr/local/share/chruby/chruby.sh
-chruby 2.1
-
-source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
+# ========== Key Bindings ==========
 
 # bind P and N for EMACS mode
 bindkey -M emacs '^P' history-substring-search-up
@@ -101,11 +124,8 @@ foreground-vi() {
 zle -N foreground-vi
 bindkey '^Z' foreground-vi
 
-[ -f ~/.redis-credentials ] && source ~/.redis-credentials
 
-export EDITOR=vim
 
-export GOPATH='/home/eric/go'
+# ========== Miscellaneous ==========
 
-# Fuzzy Finder: https://github.com/junegunn/fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+chruby 2.1
