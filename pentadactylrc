@@ -6,6 +6,7 @@ set popups=window
 set showtabline=never
 
 map <leader>q d
+map <F10> :<cr> "work around for bug that affects scrolling
 
 "get the mouse out of my way!
 map <leader>m :!xdotool mousemove 10000 0<cr><cr>
