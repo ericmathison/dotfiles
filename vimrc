@@ -25,7 +25,9 @@ map <leader>r :w<bar>:!xdotool search --name 'Pentadactyl' key F5<cr><cr>
 "reference: http://vimbits.com/bits/23
 nnoremap <Leader>S ^vg_y:execute @@<CR>
 
+" mappings for Fuzzy Finder (https://github.com/junegunn/fzf)
 nnoremap <C-P> :FZF<cr>
+nnoremap <C-T> :FZF<cr>
 
 "scroll page using arrows
 nmap <Up> <C-y>
