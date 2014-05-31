@@ -68,6 +68,7 @@ export GPG_TTY=`tty`
 export EDITOR=vim
 export GOPATH='/home/eric/go'
 
+export FZF_DEFAULT_OPTS='-x'
 
 
 # ========== Aliases ==========
