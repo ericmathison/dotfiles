@@ -58,7 +58,9 @@ let g:slime_target = "tmux"
 
 set t_Co=256
 
-colorscheme jellybeans
+let g:seoul256_background = 235
+colorscheme seoul256
+" colorscheme jellybeans
 " colorscheme molokai
 
 """""""""""""""""""""""""""""""""""
