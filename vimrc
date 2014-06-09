@@ -45,7 +45,7 @@ if has("autocmd")
   autocmd FileType javascript,css,sh,c setlocal ts=4 sts=4 sw=4 et
   autocmd FileType python,html,php,java setlocal ts=4 sts=4 sw=4 et
   autocmd FileType html,php setlocal showbreak=↪................................
-  autocmd FileType text setlocal modeline
+  autocmd FileType text setlocal modeline linebreak
   autocmd FileType gitcommit setlocal spell
   autocmd BufRead,BufNewFile *.cap set filetype=ruby
 endif
