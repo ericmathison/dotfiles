@@ -129,4 +129,4 @@ bindkey '^Z' foreground-vi
 
 # ========== Miscellaneous ==========
 
-chruby 2.1
+chruby 1.9.3
