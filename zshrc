@@ -45,6 +45,7 @@ plugins=(git)
 # ========== Files to Source ==========
 
 source_list=($ZSH/oh-my-zsh.sh
+             ~/scripts/z.sh
              /usr/local/share/chruby/chruby.sh
              ~/.redis-credentials
              ~/.fzf.zsh)
@@ -129,4 +130,3 @@ bindkey '^Z' foreground-vi
 # ========== Miscellaneous ==========
 
 chruby 2.1
-eval "$(fasd --init auto)"

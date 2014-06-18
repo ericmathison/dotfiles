@@ -1,6 +1,6 @@
 # ========== Files to Source ==========
 
-source_list=(~/Documents/software/packages/z/z.sh
+source_list=(~/scripts/z.sh
              /usr/local/share/chruby/chruby.sh
              ~/.redis-credentials
              ~/.fzf.bash)
