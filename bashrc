@@ -36,7 +36,7 @@ export GPG_TTY=`tty`
 # overwritten
 export HISTSIZE=100000 HISTFILE=~/.bhistory
 export EDITOR=vim
-export PATH=$PATH:/home/eric/bin
+export PATH=$PATH:/home/eric/scripts/bin
 
 
 

@@ -61,7 +61,7 @@ done
 # ========== Variables ==========
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/go/bin:/home/eric/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=$PATH:/usr/local/go/bin:/home/eric/scripts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # for gpg vim plugin
 export GPG_TTY=`tty`
