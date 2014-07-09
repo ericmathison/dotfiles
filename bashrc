@@ -58,7 +58,7 @@ alias lsa='ls -FA --color=auto'
 
 # ========== Miscellaneous ==========
 
-chruby 2.0.0-p247
+chruby 2
 
 # append to the history file, don't overwrite it
 shopt -s histappend
