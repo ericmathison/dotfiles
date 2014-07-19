@@ -18,6 +18,7 @@ ln -si ~/dotfiles/bashrc .bashrc
 ln -si ~/dotfiles/vimrc .vimrc
 ln -si ~/dotfiles/gitconfig .gitconfig
 ln -si ~/dotfiles/pentadactylrc .pentadactylrc
+ln -si ~/dotfiles/pryrc .pryrc
 ln -si ~/dotfiles/zshrc .zshrc
 ln -si ~/dotfiles/gitignore_global .gitignore_global
 mkdir -p .w3m
