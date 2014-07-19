@@ -1,6 +1,13 @@
 Pry.config.editor = "vim"
 Pry.config.pager = false
 
+# Using this custom printer saves vertical space in the ouput
+Pry.config.print = proc do |output, value|
+    result = value.inspect
+    result = "=> #{result}"
+    puts CodeRay.scan(result, :ruby).term
+end
+
 # See https://gist.github.com/jimweirich/4950443
 def edit(file, line)
   `gvim #{file} +#{line}`
