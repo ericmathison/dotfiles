@@ -3,8 +3,7 @@ Pry.config.pager = false
 
 # Using this custom printer saves vertical space in the ouput
 Pry.config.print = proc do |output, value|
-    result = value.inspect
-    result = "=> #{result}"
+    result = "=> #{value.inspect}"
     puts CodeRay.scan(result, :ruby).term
 end
 
