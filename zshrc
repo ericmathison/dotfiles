@@ -73,12 +73,13 @@ export BROWSER=firefox
 
 
 # ========== Aliases ==========
+pretty_format="format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 
 # show graph of all branches/stashes
-alias gla="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+alias gla="git log --graph --pretty=$pretty_format --abbrev-commit --all"
 
 # just log the current branch
-alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gl="git log --pretty=$pretty_format --abbrev-commit"
 
 alias gltrunc="git log --pretty=format:'%h - %an, %ar : %s' --graph --color=always | sed 's/^\(.\{160\}\).\+/\1/' |less -R"
 alias gb='git branch -av'
