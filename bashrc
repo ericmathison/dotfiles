@@ -21,11 +21,19 @@ red="\[\e[1;31m\]"
 # end color
 close="\[\e[m\]"
 
+function git_head {
+    # git-symbolic-ref ouptuts the name of HEAD if it exists. Otherwise repo
+    # is in detached head state and we should use git-rev-parse to find a hash.
+    # If neither outputs a value, we are not in a git repo and should simply
+    # return.
+    ref=$(git symbolic-ref --short HEAD 2> /dev/null || git rev-parse --short HEAD 2> /dev/null) || return
+    echo "("$ref")"
+}
+
 # \u is the username
 # \h is the name of my computer
 # \w is the current directory
-# __git_ps1 retrieves the git branch name if in a git repository
-PS1="$color\u@\h: \w $red"'$(__git_ps1 "(%s)")'"$color$ $close"
+PS1="$color\u@\h: \w $red"'$(git_head)'"$color$ $close"
 
 
 # for gpg vim plugin
