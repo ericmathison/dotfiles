@@ -2,7 +2,6 @@
 
 source_list=(~/scripts/z.sh
              /usr/local/share/chruby/chruby.sh
-             ~/.redis-credentials
              ~/.fzf.bash)
 
 for file in "${source_list[@]}"
