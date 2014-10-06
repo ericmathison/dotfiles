@@ -47,6 +47,7 @@ plugins=(git)
 source_list=($ZSH/oh-my-zsh.sh
              ~/scripts/z.sh
              /usr/local/share/chruby/chruby.sh
+             ~/.private-zsh
              ~/.fzf.zsh)
 
 for file in "${source_list[@]}"
