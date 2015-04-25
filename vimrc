@@ -86,12 +86,5 @@ colorscheme seoul256
 " colorscheme jellybeans
 " colorscheme molokai
 
-"""""""""""""""""""""""""""""""""""
-"""""""" Settings for Go """"""""""
-"""""""""""""""""""""""""""""""""""
-" Clear filetype flags before changing runtimepath to force Vim to reload them.
-filetype off
-filetype plugin indent off
-set runtimepath+=/usr/local/go/misc/vim
 filetype plugin indent on
 syntax on
