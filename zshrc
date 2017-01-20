@@ -39,7 +39,8 @@ COMPLETION_WAITING_DOTS="true"
 # plugins=(git history-substring-search)
 plugins=(git)
 
-
+# this command expands aliases Ctrl-X a
+alias mathpi='echo π'
 
 
 # ========== Files to Source ==========
