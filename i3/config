@@ -177,3 +177,7 @@ bar {
 
 # class                 border  backgr. text    indicator
 client.unfocused        #222222 #333333 #666666 #292d2e
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
