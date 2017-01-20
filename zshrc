@@ -68,7 +68,7 @@ export PATH=/home/eric/scripts/bin:$PATH:/usr/local/go/bin:/usr/local/sbin:/usr/
 export GPG_TTY=`tty`
 
 export EDITOR=vim
-export GOPATH='/home/eric/go'
+export GOPATH=$HOME/go
 export FZF_DEFAULT_OPTS='-x'
 export BROWSER=firefox
 
