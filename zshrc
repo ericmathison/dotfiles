@@ -71,6 +71,7 @@ export EDITOR=vim
 export GOPATH=$HOME/go
 export FZF_DEFAULT_OPTS='-x'
 export BROWSER=firefox
+export PATH=$PATH:$GOPATH/bin
 
 
 # ========== Aliases ==========
