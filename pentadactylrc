@@ -7,9 +7,6 @@ set showtabline=never
 
 map <leader>q d
 
-map <F8> :toolbarhide Add-on Bar<cr>
-map <F9> :toolbarshow Add-on Bar<cr>
-
 "work around for bug that affects scrolling
 map <F10> :<cr>
 
