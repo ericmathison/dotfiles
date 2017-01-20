@@ -12,6 +12,3 @@ map <F10> :<cr>
 
 "get the mouse out of my way!
 map <leader>m :!xdotool mousemove 10000 0<cr><cr>
-
-"hide status bar
-set guioptions-=s
