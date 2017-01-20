@@ -84,6 +84,7 @@ alias gl="git log --pretty=$pretty_format --abbrev-commit"
 
 alias gltrunc="git log --pretty=format:'%h - %an, %ar : %s' --graph --color=always | sed 's/^\(.\{160\}\).\+/\1/' |less -R"
 alias gb='git branch -av'
+alias gbd='git for-each-ref --sort=committerdate refs/heads/ refs/remotes/ --format="%(committerdate:short) %(objectname:short) %(refname:short)" | sort -r'
 alias gst='git status'
 alias gco='git checkout'
 alias gpom='git push origin master'
@@ -111,6 +112,11 @@ alias am=alsamixer
 alias zmu='z mu'
 alias zm='z mu' # aliases `zm u` to `z mu`
 alias zk='z k'
+alias d='cd ~/Desktop'
+alias vim='vim -p'
+alias vi='vim -p'
+alias gcalccmd='rlwrap gcalccmd'
+alias pryr="pry -r ./config/environment -r rails/console/app -r rails/console/helpers"
 
 
 
