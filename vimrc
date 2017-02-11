@@ -78,9 +78,9 @@ let g:indent_guides_guide_size = 1
 
 set t_Co=256
 
-let g:seoul256_background = 235
-colorscheme seoul256
-" colorscheme jellybeans
+" let g:seoul256_background = 235
+" colorscheme seoul256
+colorscheme jellybeans
 " colorscheme molokai
 
 filetype plugin indent on
