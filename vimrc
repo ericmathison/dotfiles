@@ -18,8 +18,10 @@ nmap <leader>h :set nonumber showbreak=<cr>
 "toggle display of invisible characters
 nmap <leader>l :set list!<cr>
 
-"save and refresh web browser
-map <leader>r :w<bar>:!xdotool search --name 'Pentadactyl' key F5<cr><cr>
+noremap <leader>r :SyntasticReset<cr>
+
+"save text and refresh web browser in one shot
+" map <leader>r :w<bar>:!xdotool search --name 'Pentadactyl' key F5<cr><cr>
 
 "Source a single line of vimscript
 "reference: http://vimbits.com/bits/23
