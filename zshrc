@@ -117,6 +117,7 @@ alias vim='vim -p'
 alias vi='vim -p'
 alias gcalccmd='rlwrap gcalccmd'
 alias pryr="pry -r ./config/environment -r rails/console/app -r rails/console/helpers"
+alias cdgem='function _cdgem(){ cd "$(bundle show $1)" }; _cdgem'
 
 
 
