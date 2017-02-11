@@ -90,8 +90,7 @@ alias gst='git status'
 alias gco='git checkout'
 alias gpom='git push origin master'
 
-# git grep
-alias gg='git gp'
+alias gg='git grep'
 
 # cd to git root
 alias gr='cd "$(git rev-parse --show-toplevel)"'
