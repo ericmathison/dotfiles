@@ -12,28 +12,6 @@ map <leader>w ZZ
 noremap j gj
 noremap k gk
 
-" The following hash conveniences were taken from Brendon Rapp's blog post:
-" http://www.economyofeffort.com/2014/07/09/vim-tricks-for-ruby-hashes/
-function! RubyHashesAll()
-  :%s/:\([^ ]*\)\(\s*\)=>/\1:/ge
-endfunction
-
-function! RubyHashesSelected()
-  :'<,'>s/:\([^ ]*\)\(\s*\)=>/\1:/ge
-endfunction
-
-nmap <Leader>rhh :call RubyHashesAll()<CR>
-vmap <Leader>rhh :call RubyHashesSelected()<CR>
-
-function! RubyExtractHashKeys()
-  :'<,'>s/\([:'"]\?[a-zA-Z]\+['"]\?\)\s*=>[^,}]\+\([,}]\)/\1\2/ge
-  :'<,'>s/\([a-zA-Z]\+\)[:]\s*[^,}]\+\([,}]\)/:\1\2/ge
-  :'<,'>s/{\s*/\[/ge
-  :'<,'>s/\s*}/\]/ge
-endfunction
-
-vmap <Leader>rhe :call RubyExtractHashKeys()<CR>
-
 "hide line numbers and showbreak to more easily copy text directly from terminal
 nmap <leader>h :set nonumber showbreak=<cr>
 
