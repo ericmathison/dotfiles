@@ -76,9 +76,6 @@ endif
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 
-" use vim-slime with tmux
-let g:slime_target = "tmux"
-
 set t_Co=256
 
 let g:seoul256_background = 235
