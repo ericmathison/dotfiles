@@ -67,3 +67,27 @@ end
 function cdgem
     cd (bundle show $argv)
 end
+
+function gb
+    git branch -av
+end
+
+function gst
+    git status
+end
+
+function gco
+    git checkout
+end
+
+function gpom
+    git push origin master
+end
+
+function gg
+    git grep $argv
+end
+
+function gr
+    cd (git rev-parse --show-toplevel)
+end
