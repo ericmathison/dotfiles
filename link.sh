@@ -22,4 +22,6 @@ ln -sf ~/dotfiles/zshrc .zshrc
 ln -sf ~/dotfiles/gitignore_global .gitignore_global
 mkdir -p .w3m
 ln -sf ~/dotfiles/w3m/keymap .w3m/keymap
+mkdir -p .config/fish
+ln -sf ~/dotfiles/config.fish ~/.config/fish/config.fish
 )
