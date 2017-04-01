@@ -1,3 +1,11 @@
+if test -e ~/scripts/z.fish
+    source ~/scripts/z.fish
+end
+
+if test -e /usr/local/share/chruby/chruby.fish
+    source /usr/local/share/chruby/chruby.fish
+end
+
 function l
     ls -lhF --color=auto $argv
 end
