@@ -7,8 +7,7 @@
 # the file names. Unwanted lines can be commented out temporarily. To look at
 # my previous script, do a git checkout of b244c6d74905e6abea4f029e35878bbd4891f
 
-cd
-
+(cd
 ln -sf ~/dotfiles/Xmodmap .Xmodmap
 mkdir -p .i3
 ln -sf ~/dotfiles/i3/config .i3/config
@@ -23,3 +22,4 @@ ln -sf ~/dotfiles/zshrc .zshrc
 ln -sf ~/dotfiles/gitignore_global .gitignore_global
 mkdir -p .w3m
 ln -sf ~/dotfiles/w3m/keymap .w3m/keymap
+)
