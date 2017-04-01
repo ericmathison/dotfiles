@@ -1,17 +1,17 @@
 function l
-    ls -lhF --color=auto
+    ls -lhF --color=auto $argv
 end
 
 function la
-    ls -lhFA --color=auto
+    ls -lhFA --color=auto $argv
 end
 
 function lsa
-    ls -FA --color=auto
+    ls -FA --color=auto $argv
 end
 
 function be
-    bundle exec
+    bundle exec $argv
 end
 
 function am
@@ -31,11 +31,11 @@ function d
 end
 
 function vim
-    command vim -p
+    command vim -p $argv
 end
 
 function vi
-    vim
+    vim $argv
 end
 
 function gcalccmd
