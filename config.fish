@@ -1,7 +1,7 @@
 set PATH /home/eric/scripts/bin $PATH /usr/local/go/bin /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin
 
 # for gpg vim plugin
-set GPG_TTY=(tty)
+set GPG_TTY tty
 
 set EDITOR vim
 set GOPATH $HOME/go
