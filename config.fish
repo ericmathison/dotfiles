@@ -77,7 +77,7 @@ function gst
 end
 
 function gco
-    git checkout
+    git checkout $argv
 end
 
 function gpom
