@@ -4,8 +4,8 @@ set PATH /home/eric/scripts/bin $PATH /usr/local/go/bin /usr/local/sbin /usr/loc
 set GPG_TTY tty
 
 set EDITOR vim
-set GOPATH $HOME/go
 set BROWSER firefox
+set GOPATH $HOME/go
 set PATH $PATH $GOPATH/bin
 
 set fish_greeting ''
