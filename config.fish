@@ -60,6 +60,10 @@ function gcalccmd
     rlwrap gcalccmd
 end
 
+function trash
+    gvfs-trash $argv
+end
+
 function pryr
     pry -r ./config/environment -r rails/console/app -r rails/console/helpers
 end
