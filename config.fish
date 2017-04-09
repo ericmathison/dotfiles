@@ -134,4 +134,7 @@ end
 function fish_user_key_bindings
     # hit escape key twice to clear line
     bind \e\e beginning-of-buffer kill-line
+
+    # thrice to exit
+    bind \e\e\e exit
 end
