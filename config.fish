@@ -8,6 +8,8 @@ set GOPATH $HOME/go
 set BROWSER firefox
 set PATH $PATH $GOPATH/bin
 
+set fish_greeting ''
+
 if test -e ~/scripts/z.fish
     source ~/scripts/z.fish
 end
