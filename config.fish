@@ -130,3 +130,8 @@ function fish_prompt --description 'Write out the prompt'
 
     echo -n -s "$USER" @ (prompt_hostname) ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal) (__fish_git_prompt) "$suffix "
 end
+
+function fish_user_key_bindings
+    # hit escape key twice to clear line
+    bind \e\e beginning-of-buffer kill-line
+end
