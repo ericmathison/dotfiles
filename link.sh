@@ -1,11 +1,7 @@
 #!/bin/sh
 
-# Once upon a time, my dotfiles repo had a script which would dynamically find
-# and symlink all the dotfiles. Overall, it was great except when I didn't want
-# ALL the dotfiles symlinked. Instead of spending a lot of time and most likely
-# just complicating things anyway, I'm punting on the issue by just hard coding
-# the file names. Unwanted lines can be commented out temporarily. To look at
-# my previous script, do a git checkout of b244c6d74905e6abea4f029e35878bbd4891f
+# Unwanted lines can be obviously be commented out before running this script.
+# Otherwise, existing dotfiles will be overwritten.
 
 (cd
 ln -sf ~/dotfiles/Xmodmap .Xmodmap
