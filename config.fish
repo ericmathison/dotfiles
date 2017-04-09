@@ -98,6 +98,11 @@ function gr
     cd (git rev-parse --show-toplevel)
 end
 
+function gl
+    set -l pretty_format "format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+    git log --pretty=$pretty_format --abbrev-commit
+end
+
 # look here for configuration options:
 # https://github.com/fish-shell/fish-shell/blob/master/share/functions/__fish_git_prompt.fish
 set red (set_color red)
