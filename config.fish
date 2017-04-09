@@ -95,3 +95,31 @@ end
 function gr
     cd (git rev-parse --show-toplevel)
 end
+
+# look here for configuration options:
+# https://github.com/fish-shell/fish-shell/blob/master/share/functions/__fish_git_prompt.fish
+set red (set_color red)
+set __fish_git_prompt_showdirtystate 'yes'
+set __fish_git_prompt_showstashstate 'yes'
+set __fish_git_prompt_showuntrackedfiles 'yes'
+set __fish_git_prompt_color_branch red
+
+# original fish_prompt function with __fish_git_prompt added
+function fish_prompt --description 'Write out the prompt'
+    set -l color_cwd
+    set -l suffix
+    switch $USER
+        case root toor
+            if set -q fish_color_cwd_root
+                set color_cwd $fish_color_cwd_root
+            else
+                set color_cwd $fish_color_cwd
+            end
+            set suffix '#'
+        case '*'
+            set color_cwd $fish_color_cwd
+            set suffix '>'
+    end
+
+    echo -n -s "$USER" @ (prompt_hostname) ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal) (__fish_git_prompt) "$suffix "
+end
