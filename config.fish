@@ -138,3 +138,5 @@ function fish_user_key_bindings
     # thrice to exit
     bind \e\e\e exit
 end
+
+chruby ruby

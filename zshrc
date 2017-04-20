@@ -138,7 +138,7 @@ bindkey '^Z' foreground-vi
 
 # ========== Miscellaneous ==========
 
-chruby 2.4.0
+chruby ruby
 
 function countdown(){
    date1=$((`date +%s` + $1));

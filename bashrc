@@ -76,7 +76,7 @@ alias cdgem='function _cdgem(){ cd "$(bundle show $1)" }; _cdgem'
 
 # ========== Miscellaneous ==========
 
-chruby 2
+chruby ruby
 
 # append to the history file, don't overwrite it
 shopt -s histappend
