@@ -35,3 +35,5 @@
     linenumber = true
 [alias]
     gp = grep -I --heading --before-context 2 --after-context 2 --show-function --untracked --extended-regexp
+[push]
+	default = simple
