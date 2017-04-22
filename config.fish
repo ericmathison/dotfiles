@@ -99,7 +99,7 @@ function gr
 end
 
 function gl
-    set -l pretty_format "format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+    set -l pretty_format "format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
     git log --pretty=$pretty_format --abbrev-commit $argv
 end
 
