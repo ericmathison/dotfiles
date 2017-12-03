@@ -1,4 +1,8 @@
-set PATH /home/eric/scripts/bin $PATH /usr/local/go/bin /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin
+if test -d /usr/local/go/bin
+    set PATH /usr/local/go/bin $PATH
+end
+
+set PATH /home/eric/scripts/bin $PATH /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin
 
 # for gpg vim plugin
 set GPG_TTY tty
