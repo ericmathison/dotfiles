@@ -107,6 +107,17 @@ function gl
     git log --pretty=$pretty_format --abbrev-commit $argv
 end
 
+function gla
+    set -l pretty_format "format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
+    git log --graph --pretty=$pretty_format --abbrev-commit --all
+end
+
+function gdiff
+    git add (git rev-parse --show-toplevel)
+    and git diff --cached
+    and git reset HEAD
+end
+
 # look here for configuration options:
 # https://github.com/fish-shell/fish-shell/blob/master/share/functions/__fish_git_prompt.fish
 set red (set_color red)
