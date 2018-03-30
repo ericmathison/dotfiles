@@ -79,7 +79,7 @@ function cdgem
 end
 
 function gb
-    git branch -av
+    git branch -avv
 end
 
 function gst
