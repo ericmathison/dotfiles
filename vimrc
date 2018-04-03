@@ -7,6 +7,8 @@ set colorcolumn=80 showbreak=↪ display=lastline laststatus=2
 map <leader>q ZQ
 map <leader>w ZZ
 
+nnoremap <leader>v :set paste<cr>i
+
 "use j and k for visual lines
 "not just actual lines
 noremap j gj
