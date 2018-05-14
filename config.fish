@@ -83,7 +83,7 @@ function gb
 end
 
 function gst
-    git status
+    git status $argv
 end
 
 function gco
