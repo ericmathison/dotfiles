@@ -154,4 +154,4 @@ function fish_user_key_bindings
     bind \e\e\e exit
 end
 
-chruby ruby
+fry ruby > /dev/null
