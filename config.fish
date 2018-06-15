@@ -66,6 +66,10 @@ function gcalccmd
     rlwrap gcalccmd
 end
 
+function t
+    gvfs-trash $argv
+end
+
 function trash
     gvfs-trash $argv
 end
