@@ -1,6 +1,6 @@
 [user]
     name = Eric Mathison
-    email = dev@ekmathison.com
+    email = dev@ericmathison.io
 [core]
     editor = vim
     excludesfile = /home/eric/.gitignore_global
