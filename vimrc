@@ -1,7 +1,7 @@
 call pathogen#infect()
 
 set ignorecase incsearch smartindent autoindent number shell=sh
-set showbreak=↪ display=lastline laststatus=2
+set showbreak=↪ display=lastline laststatus=2 hlsearch
 
 "exit vim quickly
 map <leader>q ZQ
