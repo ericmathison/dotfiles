@@ -11,6 +11,7 @@ set EDITOR vim
 set BROWSER firefox
 set GOPATH $HOME/go
 set PATH $PATH $GOPATH/bin
+set -x RAILS_SYSTEM_TESTING_SCREENSHOT simple
 set -x MOZ_USE_XINPUT2 1
 
 set fish_greeting ''
