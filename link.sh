@@ -20,4 +20,6 @@ mkdir -p .w3m
 ln -sf ~/dotfiles/w3m/keymap .w3m/keymap
 mkdir -p .config/fish
 ln -sf ~/dotfiles/config.fish ~/.config/fish/config.fish
+mkdir -p .config/vis
+ln -sf ~/dotfiles/visrc.lua ~/.config/vis/visrc.lua
 )
