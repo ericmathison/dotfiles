@@ -2,6 +2,9 @@ require('vis')
 
 vis.events.subscribe(vis.events.INIT, function()
     -- Your global configuration options
+    vis:map(vis.modes.NORMAL, "\\q", function()
+        vis:command('q!')
+    end)
 end)
 
 vis.events.subscribe(vis.events.WIN_OPEN, function(win)
