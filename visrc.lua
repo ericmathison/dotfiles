@@ -11,6 +11,10 @@ vis.events.subscribe(vis.events.INIT, function()
     vis:command('q!')
   end)
 
+  vis:map(vis.modes.NORMAL, "\\w", function()
+    vis:command('wq')
+  end)
+
   vis:map(vis.modes.NORMAL, '<Up>', '<C-y>')
   vis:map(vis.modes.NORMAL, '<Down>', '<C-e>')
 
