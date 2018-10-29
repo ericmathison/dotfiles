@@ -20,6 +20,8 @@ mkdir -p .w3m
 ln -sf ~/dotfiles/w3m/keymap .w3m/keymap
 mkdir -p .config/fish
 ln -sf ~/dotfiles/config.fish ~/.config/fish/config.fish
+ln -sf ~/dotfiles/editorconfig .editorconfig
+[ ! -d .config/vis/editorconfig ] && git clone https://github.com/vktec/vis-editorconfig "$HOME/.config/vis/editorconfig"
 mkdir -p .config/vis
 ln -sf ~/dotfiles/visrc.lua ~/.config/vis/visrc.lua
 )

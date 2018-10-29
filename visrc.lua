@@ -1,5 +1,8 @@
 require('vis')
 
+-- https://github.com/vktec/vis-editorconfig
+require('editorconfig/editorconfig')
+
 vis.events.subscribe(vis.events.INIT, function()
     -- Your global configuration options
     vis:map(vis.modes.NORMAL, "\\q", function()
