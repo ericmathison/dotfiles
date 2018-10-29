@@ -8,6 +8,9 @@ vis.events.subscribe(vis.events.INIT, function()
 
     vis:map(vis.modes.NORMAL, '<Up>', '<C-y>')
     vis:map(vis.modes.NORMAL, '<Down>', '<C-e>')
+
+    vis:map(vis.modes.NORMAL, '[ ', 'O<Escape>')
+    vis:map(vis.modes.NORMAL, '] ', 'o<Escape>')
 end)
 
 vis.events.subscribe(vis.events.WIN_OPEN, function(win)
