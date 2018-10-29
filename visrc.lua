@@ -2,6 +2,8 @@ require('vis')
 
 -- https://github.com/vktec/vis-editorconfig
 require('editorconfig/editorconfig')
+-- https://github.com/lutobler/vis-commentary
+require('vis-commentary/vis-commentary')
 
 vis.events.subscribe(vis.events.INIT, function()
   -- Your global configuration options
