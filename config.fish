@@ -64,6 +64,10 @@ function vi
     vim $argv
 end
 
+function v
+    vis $argv
+end
+
 function gcalccmd
     rlwrap gcalccmd
 end
