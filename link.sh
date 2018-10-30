@@ -23,6 +23,7 @@ ln -sf ~/dotfiles/config.fish ~/.config/fish/config.fish
 ln -sf ~/dotfiles/editorconfig .editorconfig
 [ ! -d .config/vis/editorconfig ] && git clone https://github.com/vktec/vis-editorconfig "$HOME/.config/vis/editorconfig"
 [ ! -d .config/vis/vis-commentary ] && git clone https://github.com/lutobler/vis-commentary "$HOME/.config/vis/vis-commentary"
+[ ! -d .config/vis/vis-cursors ] && git clone https://github.com/erf/vis-cursors "$HOME/.config/vis/vis-cursors"
 mkdir -p .config/vis
 ln -sf ~/dotfiles/visrc.lua ~/.config/vis/visrc.lua
 )

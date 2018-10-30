@@ -4,6 +4,8 @@ require('vis')
 require('editorconfig/editorconfig')
 -- https://github.com/lutobler/vis-commentary
 require('vis-commentary/vis-commentary')
+ -- https://github.com/erf/vis-cursors
+require('vis-cursors/cursors')
 
 vis.events.subscribe(vis.events.INIT, function()
   -- Your global configuration options
