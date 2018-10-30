@@ -23,6 +23,9 @@ vis.events.subscribe(vis.events.INIT, function()
   vis:map(vis.modes.NORMAL, '[ ', 'O<Escape>')
   vis:map(vis.modes.NORMAL, '] ', 'o<Escape>')
 
+  vis:map(vis.modes.NORMAL, 'j', 'gj')
+  vis:map(vis.modes.NORMAL, 'k', 'gk')
+
   vis:command('set autoindent')
 end)
 
