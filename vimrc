@@ -39,6 +39,9 @@ vmap <Down> <C-e>
 vmap <Left> 5zh
 vmap <Right> 5zl
 
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
 if has("autocmd")
   filetype plugin indent on
   autocmd FileType ruby,cucumber,vim,eruby,haml setlocal ts=2 sts=2 sw=2 et
