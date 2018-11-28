@@ -160,4 +160,10 @@ function fish_user_key_bindings
     bind \e\e exit
 end
 
+function nvm
+    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
+
+nvm use default > /dev/null
+
 fry ruby > /dev/null
